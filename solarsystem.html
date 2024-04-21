@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Solar System - Immagini NASA</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: repeat(8, 1fr);
+        }
+        .grid-item {
+            position: relative;
+            padding: 5%;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+        .grid-item p {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            transition: opacity 0.3s;
+            opacity: 0;
+        }
+        .grid-item:hover p{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">NASA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="solarsystem.html">Solar System <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3 grid-item">
+                <img src="image/mercurio.png" alt="Mercurio">
+                <p>Mercurio è il pianeta più vicino al Sole e il più piccolo del sistema solare. La sua superficie è caratterizzata da estreme temperature, con temperature diurne molto alte e notturne molto basse. Mercurio non ha un'atmosfera significativa e presenta un terreno roccioso.</p>
+            </div>
+            <div class="col-md-3 grid-item">
+                <img src="image/venere.png" alt="Venere">
+                <p>Venere è il pianeta più simile alla Terra in termini di dimensioni e massa. Tuttavia, la sua atmosfera densa è composta principalmente di anidride carbonica, creando un effetto serra che rende la sua superficie estremamente calda. Venere è conosciuto anche come "la stella del mattino" o "la stella della sera</p>
+            </div>
+            <div class="col-md-3 grid-item">
+                <img src="image/terra.png" alt="Terra">
+                <p>La Terra è il nostro pianeta, abitato da una straordinaria varietà di forme di vita. Con la sua atmosfera ricca di ossigeno, acqua liquida e un ambiente propizio alla vita, è unico nel sistema solare. La presenza di oceani e una vasta gamma di ecosistemi contribuiscono alla sua diversità biologica</p>
+            </div>
+            <div class="col-md-3 grid-item">
+                <img src="image/marte.png" alt="Marte">
+                <p>Marte è noto come "il pianeta rosso" a causa del colore del suo suolo ricco di ossido di ferro. Ha una sottile atmosfera composta principalmente di anidride carbonica. Marte è stato oggetto di interesse per la ricerca sulla vita extraterrestre, con le sue caratteristiche geologiche che suggeriscono la presenza passata di acqua liquida.</p>
+            </div>
+            <div class="col-md-3 grid-item">
+                <img src="image/saturno.png" alt="Saturno">
+                <p>Saturno è un altro gigante gassoso, secondo in grandezza solo a Giove. È noto per i suoi spettacolari anelli, composti principalmente di particelle di ghiaccio e roccia. Saturno ha una vasta atmosfera gassosa e numerosi satelliti naturali, tra cui il grande Titano, che ha un'atmosfera densa.</p>
+            </div>
+            <div class="col-md-3 grid-item">
+                <img src="image/giove.png" alt="Giove">
+                <p>
+                    Giove, gigante gassoso del sistema solare, ha massa doppia rispetto agli altri pianeti. Atmosfera con nuvole colorate, evidente la Grande Macchia Rossa. Circondato da quattro satelliti galileiani unici: Io, Europa, Ganimede e Callisto.</p>
+            </div>
+            <div class="col-md-3 grid-item">
+                <img src="image/urano.png" alt="Urano">
+                <p>Urano è un gigante gassoso inclinato lateralmente rispetto al piano orbitale degli altri pianeti. Questa inclinazione gli conferisce una rotazione laterale unica. Urano ha una caratteristica colorazione blu-verde dovuta alla presenza di metano nella sua atmosfera. Ha anche anelli, ma sono meno spettacolari rispetto a quelli di Saturno.</p>
+            </div>
+            <div class="col-md-3 grid-item">
+                <img src="image/nettuno.png" alt="Nettuno">
+                <p>Nettuno è l'ultimo pianeta del sistema solare, un altro gigante gassoso. Ha una caratteristica colorazione blu scura e venti atmosferici estremamente veloci. Nettuno possiede anelli e una grande luna chiamata Tritone, che è nota per la sua attività geologica.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
